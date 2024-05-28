@@ -1,0 +1,11 @@
+$ttui-divider-border-color: rgb(199, 199, 199);
+
+.ttui-common {
+  &__divider {
+    display: inline-block;
+    &--vertical {
+      width: 1px;
+      border-left: 1px solid $ttui-divider-border-color;
+    }
+  }
+}

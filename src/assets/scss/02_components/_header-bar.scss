@@ -1,0 +1,19 @@
+.ttui-form__header-bar {
+  height: 60px;
+  display: flex;
+  padding: 12px 8px;
+  align-items: center;
+  justify-content: space-between;
+  &--theme {
+    background-color: $primary-theme-color;
+    .header-bar__title {
+      color: #fff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden !important;
+    }
+  }
+  &:not(.ttui-form__header-bar--theme) .header-bar__title {
+    color: #333;
+  }
+}

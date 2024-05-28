@@ -1,0 +1,19 @@
+.configuration__container {
+  padding: 16px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid gainsboro;
+}
+
+.credentials-list {
+  overflow-y: scroll;
+  overflow-x: auto;
+  &__item {
+    cursor: pointer;
+    padding: 12px 8px;
+    border-top: 1px solid #eaeaea;
+    &:hover {
+      background-color: #d2d2d2;
+    }
+  }
+}

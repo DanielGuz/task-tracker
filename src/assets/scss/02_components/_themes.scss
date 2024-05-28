@@ -1,0 +1,25 @@
+.theme-configuration {
+  &__container {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+  }
+  &__item {
+    height: 60px;
+    width: 140px;
+    cursor: pointer;
+    margin-right: 16px;
+    border-radius: 8px;
+    &:hover,
+    &--selected {
+      transition: 0.2s all ease-in;
+      box-shadow:
+        0 0 0 1px #fff,
+        0 0 0 3px #9ec5ff,
+        inset 2px 2px 5px rgb(19 19 22 / 15%);
+    }
+    &[data-theme='default'] {
+      background-color: #b5b4ff;
+    }
+  }
+}

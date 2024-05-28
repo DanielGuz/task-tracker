@@ -1,0 +1,24 @@
+@import 'table';
+@import 'themes';
+@import 'container';
+@import 'divider';
+@import 'drawer';
+@import 'breadcrumb';
+@import 'button';
+@import 'loading-bar';
+@import 'header-bar';
+@import 'navbar-menu';
+@import 'selector';
+@import 'sidebar-menu';
+@import 'summary-label';
+@import 'form-container';
+@import 'title';
+
+.form-bar {
+  &__container {
+    padding: 20px 52px;
+    background: #fff;
+    margin: -40px -52px 0;
+    border-bottom: 1px solid #f0ecec;
+  }
+}

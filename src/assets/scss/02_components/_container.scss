@@ -1,0 +1,57 @@
+.ttui-main {
+  &__container {
+    height: calc(100vh - 30px);
+    .ttui-footer__container {
+      left: 0;
+      bottom: 10px;
+      z-index: 10;
+      padding: 4px;
+      height: 30px;
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      span {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+        color: rgb(152, 152, 152);
+      }
+    }
+  }
+  &__container-login {
+    height: calc(100% - 40px);
+  }
+  &__container-app {
+    height: 100%;
+  }
+  &__content {
+    overflow: auto;
+    position: fixed;
+    width: calc(100% - 60px);
+    margin: 10px 0 20px 60px;
+    height: calc(100%);
+    transition: 0.2s all ease-in-out;
+    background: rgb(246, 246, 246);
+  }
+  &__container-close {
+    .ttui-breadcrumb__container {
+      padding-left: 6px;
+    }
+    .ttui-sidebar--menu {
+      .ttui-sidebar {
+        &--items {
+          left: -60px;
+        }
+        &--control {
+          left: 0;
+        }
+      }
+    }
+    .ttui-main__content,
+    .ttui-navbar__container {
+      left: 0;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

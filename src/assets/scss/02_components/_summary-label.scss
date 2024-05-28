@@ -1,0 +1,10 @@
+.ttui-summary-label {
+  &__title {
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  &__description {
+    overflow-wrap: break-word;
+  }
+}

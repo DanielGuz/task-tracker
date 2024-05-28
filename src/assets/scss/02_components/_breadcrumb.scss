@@ -1,0 +1,28 @@
+.ttui-breadcrumb {
+  &__link {
+    cursor: pointer;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    .breadcrumb li {
+      font-weight: 600;
+      color: rgb(148, 148, 148);
+    }
+    .breadcrumb li:last-child {
+      color: rgb(75, 75, 75);
+    }
+    .breadcrumb li + li {
+      font-size: 14px;
+      padding-top: 4px;
+      &::before {
+        content: '/';
+        margin: 0 6px;
+      }
+    }
+  }
+  &__label {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,77 @@
+.ttui-drawer {
+  top: 0;
+  height: 100vh;
+  position: absolute;
+  transition: .4s all ease-in-out;
+  &__header,
+  &__body,
+  &__footer {
+    width: 100%;
+    padding: 18px;
+  }
+  &__body {
+    flex-grow: 1;
+  }
+  &__footer {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    border-top: 1px solid #cecece;
+  }
+  &__container {
+    top: 0;
+    width: 55%;
+    right: -55%;
+    height: 100vh;
+    z-index: 1040;
+    display: flex;
+    position: fixed;
+    background: #FFF;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: .4s all ease-in-out;
+    &--small {
+      width: 30%;
+      right: -30%;
+    }
+  }
+  &__backdrop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    z-index: 1039;
+    position: fixed;
+    background-color: #000;
+  }
+  &__container {
+    &--active {
+      right: 0;
+    }
+  }
+}
+
+.fade-transition-4-enter-active,
+.fade-transition-4-leave-active {
+  transition: opacity 0.4s;
+}
+.fade-transition-4-enter,
+.fade-transition-4-leave-to {
+  opacity: 0;
+}
+
+.right-fade-small-in-transition-enter,
+.right-fade-small-in-transition-leave-to {
+  right: -30%;
+}
+
+.right-fade-in-transition-enter-active,
+.right-fade-in-transition-leave-active {
+  transition: opacity 0.4s, right 0.4s;
+}
+
+.right-fade-in-transition-enter,
+.right-fade-in-transition-leave-to {
+  right: -55%;
+}

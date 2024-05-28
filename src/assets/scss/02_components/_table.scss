@@ -1,0 +1,53 @@
+.smartTable {
+  .pagination-link.is-current {
+    border-color: $primary-theme-color;
+    background-color: $primary-theme-color;
+  }
+  table {
+    thead {
+      border-bottom: 2px solid #444444;
+    }
+  }
+  table td,
+  table th {
+    border: none;
+    vertical-align: middle;
+  }
+  table tbody td {
+    font-size: 12px;
+  }
+  table thead th {
+    height: 50px;
+    color: #333;
+    font-size: 14px;
+    min-width: 50px;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #c1c1c1 !important;
+    &.is-sortable {
+      text-decoration: underline dotted 2px #8c8c8c;
+    }
+  }
+  table tfoot {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ffffff;
+    border-top: 2px solid #444444;
+  }
+  table tfoot th {
+    border-top: 1px solid #c1c1c1 !important;
+  }
+  table tfoot td {
+    font-size: 13px;
+  }
+  table tfoot .links {
+    text-align: right;
+  }
+  table tfoot .links a {
+    display: inline-block;
+    background: #1c6ea4;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+}

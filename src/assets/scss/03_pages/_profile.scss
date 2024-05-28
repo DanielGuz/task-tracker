@@ -1,0 +1,30 @@
+.profile {
+  &__credentials-list {
+    background-color: #fff;
+    border-right: 1px solid #c6c6c6;
+  }
+  &__credentials-item {
+    cursor: pointer;
+    padding: 8px 16px;
+    &:hover,
+    &--selected {
+      font-weight: 600;
+      background-color: #dadada;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #c6c6c6;
+    }
+  }
+  &__credentials-node {
+    margin-top: 8px;
+  }
+  &__block-item {
+    width: 100%;
+    margin: 20px 12px;
+    display: flex !important;
+  }
+  &__block-data {
+    display: flex;
+    flex-direction: column;
+  }
+}

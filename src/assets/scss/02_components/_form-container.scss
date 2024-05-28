@@ -1,0 +1,44 @@
+.ttui-form {
+  &__container {
+    &--simple {
+      @extend .p-4;
+
+      width: 70%;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 4px;
+      height: calc(100% - 95px);
+      border: 1px solid gainsboro;
+    }
+    &--full {
+      @extend .p-4;
+
+      width: 100%;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 4px;
+      height: calc(100% - 95px);
+      border: 1px solid gainsboro;
+    }
+    &--double {
+      &,
+      .columns,
+      .column {
+        min-height: calc(100vh - 155px);
+      }
+      .column {
+        overflow: revert;
+      }
+      .column:first-child {
+        background-color: #fff;
+      }
+    }
+    &--auto-height {
+      &,
+      .columns,
+      .column {
+        min-height: 100% !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.ttui-title {
+  & {
+    @extend .is-5;
+    @extend .title;
+  }
+  &__subtitle {
+    @extend .is-6;
+    @extend .title;
+    display: inline-block;
+    color: rgb(137, 137, 137);
+  }
+}

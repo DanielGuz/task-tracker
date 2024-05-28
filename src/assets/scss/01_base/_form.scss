@@ -1,0 +1,50 @@
+.field {
+  label.label {
+    margin: 0;
+    font-size: 12px;
+    color: #8a8a8a;
+  }
+  &.auto-height .control {
+    height: auto !important;
+  }
+  .control:not(.timepicker),
+  .select,
+  select,
+  input {
+    height: 34px;
+  }
+  select,
+  input {
+    font-size: 15px;
+    padding: 4px 2.5em 4px 8px;
+  }
+  .control .icon.is-left,
+  .control .icon.is-right {
+    height: 34px;
+    font-size: 12px;
+  }
+}
+
+.b-steps.is-vertical
+  > .steps:not(.has-label-right):not(.has-label-left)
+  .step-items
+  .step-item
+  .step-link
+  > .step-details {
+  background-color: rgb(246, 246, 246) !important;
+}
+
+.b-steps .steps .step-items .step-item.is-danger .step-marker,
+.b-steps .steps .step-items .step-item.is-danger .step-details {
+  color: $danger-color;
+  background-color: white;
+  border-color: $danger-color;
+}
+
+.modal-form {
+  width: 95%;
+  margin: 0 auto;
+  background: #f6f6f6;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+}
