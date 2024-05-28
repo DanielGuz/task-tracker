@@ -1,4 +1,5 @@
 import { parametricRoutes } from "@/router/modules/parametric";
+import { trackRoutes } from "@/router/modules/track";
 
 import Login from '@/views/Login.vue'
 import Error404 from '@/views/404.vue'
@@ -44,6 +45,7 @@ function getCoreRoutes() {
       }
     },
     parametricRoutes(),
+    trackRoutes(),
   ]
 }
 

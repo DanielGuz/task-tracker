@@ -101,8 +101,8 @@ export const useDataTable = defineStore('dataTable', {
       //   .finally(() => { this.setLoading(false); })
 
       const data = [
-        { id_usuario: 1, nombre: 'User', apellido: '1', usuario: 'user', numdoc: 123456, fecha_login: '01-01-2024', fecha_creacion: '01-01-2024'},
-        { id_usuario: 2, nombre: 'User', apellido: '2', usuario: 'user', numdoc: 789014, fecha_login: '01-01-2024', fecha_creacion: '01-01-2024'}
+        { id_usuario: 1, id: 1, title: 'Tarea 1', description: 'Actividad 1', nombre: 'User', apellido: '1', usuario: 'user', numdoc: 123456, fecha_login: '01-01-2024', fecha_creacion: '01-01-2024', created_at: '01-01-2024', updated_at: '01-01-2024', status: 'en progreso'},
+        { id_usuario: 2, id: 2, title: 'Tarea 2', description: 'Actividad 2', nombre: 'User', apellido: '2', usuario: 'user', numdoc: 789014, fecha_login: '01-01-2024', fecha_creacion: '01-01-2024', created_at: '01-01-2024', updated_at: '01-01-2024', status: 'finalizada'}
       ]
 
       this.setData(data);

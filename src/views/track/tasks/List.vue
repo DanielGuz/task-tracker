@@ -7,11 +7,11 @@
     >
       <template v-slot:body>
 
-        <b-field label="ID">
+        <b-field label="ID Usuario">
           <b-input
-              :modelValue="filters.id"
+              :modelValue="filters.id_usuario"
               v-on:update:modelValue="updateFiltersAndLabelTab(
-              { field: 'id', value: $event },
+              { field: 'id_usuario', value: $event },
               'ID',
             )"
           ></b-input>
@@ -19,10 +19,10 @@
 
         <b-field label="Usuario">
           <b-input
-              :modelValue="filters.title"
+              :modelValue="filters.usuario"
               v-on:update:modelValue="updateFiltersAndLabelTab(
-              { field: 'title', value: $event },
-              'Título',
+              { field: 'usuario', value: $event },
+              'Usuario',
             )"
           ></b-input>
         </b-field>
@@ -41,7 +41,7 @@
       </template>
     </tt-ui-drawer>
 
-    <tt-ui-header-bar title="Usuarios">
+    <tt-ui-header-bar title="Tareas">
       <template v-slot:actions>
         <div class="is-flex is-align-items-center">
           <tt-ui-button class="mr-2" icon="redo" @click="fetchData(fetchPayload)" />
@@ -77,7 +77,7 @@
           :table-data="data"
           :columns="columns"
           :loading="showLoader"
-          sort-field="id_usuario"
+          sort-field="id"
           :total-records="totalRecords"
           :records-per-page="recordsPerPage"
 
@@ -97,7 +97,7 @@
 
 <script lang="ts">
 //import { CONFIG } from '@/app-config';
-import usuariosColumns from '@/constants/columns/parametric/users';
+import tasksColumns from '@/constants/columns/track/tasks';
 import { listBaseViewMixin } from '@/mixins/listBaseView';
 import { defineComponent } from 'vue'
 import { useDataTable } from '@/stores/dataTable'
@@ -119,13 +119,13 @@ export default defineComponent({
 
   data() {
     return {
-      id_usuario: null,
+      id: null,
       status: [],
       modules: [],
       isFetching: false,
-      idRowProperty: 'id_usuario',
-      routeBaseName: 'parametric.users',
-      descriptionRowProperty: 'id_usuario',
+      idRowProperty: 'id',
+      routeBaseName: 'track.tasks',
+      descriptionRowProperty: 'id',
       fetchPayload: {
         withParams: true,
         url: '', //CONFIG.ENDPOINT.USUARIOS,
@@ -153,12 +153,12 @@ export default defineComponent({
   mounted() {
     this.updatePaginationData({
       ...this.pagination,
-      sortfield: 'id_usuario',
+      sortfield: 'id',
       page: 1,
     });
 
     this.fetchData(this.fetchPayload);
-    this.updateColumnsTable(usuariosColumns);
+    this.updateColumnsTable(tasksColumns);
   },
 });
 </script>

@@ -1,0 +1,1 @@
+import{d as s,_ as o,o as i,c as a,q as e,e as n}from"./index-C2nEU7Iq.js";const c=s({name:"tt-ui-title"}),l={class:"ttui-title"},r={class:"ttui-title__subtitle"};function _(t,d,p,u,f,m){return i(),a("div",l,[e(t.$slots,"default"),n("div",r,[e(t.$slots,"subtitle")])])}const h=o(c,[["render",_]]);export{h as T};

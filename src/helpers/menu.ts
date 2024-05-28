@@ -10,7 +10,7 @@ export const menu = {
 
       {
         comando: '',
-        hijo: [{ comando: 'track.task', nombre: 'Tarea' }],
+        hijo: [{ comando: 'track.tasks', nombre: 'Tareas' }],
         nombre: 'Registro'
       }
     ],
